@@ -11,7 +11,8 @@ def display(request):
 
 
 def home(request):
-    return render(request,'firstapp/firstApp.html')
+    data = {"name":"laila", "age":21}
+    return render(request , 'firstapp/firstApp.html', context = data)
 
 
 def displayDateTime(request):

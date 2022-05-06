@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <title>First template</title>
+    <link rel="stylesheet" href="{% static 'css/emp.css' %}">
 </head>
 
 <body>
-<h1>Templates in action from MVT</h1>
+<h1>Templates in action from MVT {{name}} is {{age}} years old</h1>
+<p>
+<img src="{% static 'jiji.jpg' %}"
+/>
+</p>
 </body>
 
 </html>
